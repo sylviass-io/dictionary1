@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
+import Synonyms from "./Synonyms";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
