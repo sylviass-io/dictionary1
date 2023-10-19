@@ -1,4 +1,5 @@
 import React from "react";
+import "./Synonyms.css"; // Import the CSS file for styling
 
 export default function Synonyms(props) {
   if (props.synonyms) {

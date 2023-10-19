@@ -7,7 +7,7 @@ export default function Meaning(props) {
       <h3>{props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map((definition, index) => (
         <div key={index}>
-          <p>
+          <div className="Definition">
             <strong>Definition:</strong> {definition.definition}
             <br />
             {definition.example && (
@@ -18,7 +18,7 @@ export default function Meaning(props) {
               </>
             )}
             <Synonyms synonyms={definition.synonyms} />
-          </p>
+          </div>
         </div>
       ))}
     </div>
