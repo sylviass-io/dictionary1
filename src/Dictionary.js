@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
+import Phonetics from "./Phonetics";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
@@ -40,6 +41,7 @@ export default function Dictionary() {
           Suggested words: yuzu, kimchi, yoga, kombucha
         </div>
       </section>
+      <Phonetics results={results} />
       <Results results={results} />
     </div>
   );

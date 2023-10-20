@@ -1,15 +1,25 @@
 import React from "react";
-import "./Phonetics.css"; // Import the CSS file for styling
+import "./Phonetics.css";
 
 export default function Phonetics(props) {
+  if (!props.phonetics || (!props.phonetics.text && !props.phonetics.audio)) {
+    return null;
+  }
+
+  if (!props.phonetics.audio) {
+    return <div className="Phonetics"></div>;
+  }
+
   return (
     <div className="Phonetics">
-      {" "}
-      {/* Make sure the className is defined in the CSS file */}
-      <a href={props.phonetics.audio} target="_blank" rel="noreferrer">
-        Listen
-      </a>
-      <span className="text">{props.phonetics.text}</span>
+      {props.phonetics.audio && (
+        <a href={props.phonetics.audio} target="_blank" rel="noreferrer">
+          Listen
+        </a>
+      )}
+      {props.phonetics.text && (
+        <span className="text">{props.phonetics.text}</span>
+      )}
     </div>
   );
 }
