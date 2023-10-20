@@ -37,9 +37,7 @@ export default function Dictionary() {
             onChange={handleKeywordChange}
           />
         </form>
-        <div className="hint">
-          Suggested words: yuzu, kimchi, yoga, kombucha
-        </div>
+        <div className="hint">i.e. yuzu, kimchi, yoga, kombucha</div>
       </section>
       <Phonetics results={results} />
       <Results results={results} />

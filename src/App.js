@@ -10,7 +10,15 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by Sylvia SS</small>
+          <small>
+            This project was coded by Sylvia SS and is
+            <a href="https://github.com/sylviass-io/dictionary1">
+              {" "}
+              open-sourced on GitHub{" "}
+            </a>
+            and hosted on{" "}
+            <a href="https://cheerful-crisp-2ffe39.netlify.app/">Netlify</a>
+          </small>
         </footer>
       </div>
     </div>
