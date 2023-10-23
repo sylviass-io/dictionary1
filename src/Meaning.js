@@ -8,11 +8,11 @@ export default function Meaning(props) {
       {props.meaning.definitions.map((definition, index) => (
         <div key={index}>
           <div className="Definition">
-            <strong>Definition:</strong> {definition.definition}
+            <strong></strong> {definition.definition}
             <br />
             {definition.example && (
               <>
-                <strong>Example: </strong>
+                <strong> </strong>
                 <em>{definition.example}</em>
                 <br />
               </>
